@@ -19,10 +19,8 @@ channel.join()
 var canvas = document.getElementById('sketch');
 var ctx = canvas.getContext('2d');
 
-if (screen.width < 860) {
-    canvas.width = 700 * screen.width / 860;
-    canvas.height = 400 * screen.width / 860;
-}
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 var mouseX = "";
 var mouseY = "";
